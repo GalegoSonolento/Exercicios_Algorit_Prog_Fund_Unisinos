@@ -5,7 +5,7 @@ print('Insira o ano para avaliação se é bissexto ou não!')
 
 ano = int(input('Insira o ano aqui: '))
 
-if ano%4 == 0:
-    print('parabéns! Seu ano é bissexto!')
+if ano % 4 == 0:
+    print('parabens! Seu ano é bissexto!')
 else:
     print('O ano colocado não é bissexto.')
