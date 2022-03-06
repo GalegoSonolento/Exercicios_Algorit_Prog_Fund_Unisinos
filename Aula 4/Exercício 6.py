@@ -12,14 +12,14 @@ print('Coloque os valores que calcularemos a taxa e juros e quanto deverá ser p
 valor = float(input('Insira o valor aqui: '))
 
 if 0 < valor < 100:
-    valor10 = valor*0.1+valor
-    print('O pagamento deve ser:',valor10)
+    valor10 = valor * 0.1 + valor
+    print('O pagamento deve ser:', valor10)
 elif 100 <= valor < 300:
-    valor20 = valor*0.2+valor
-    print('O pagamento deve ser:',valor20)
+    valor20 = valor * 0.2 + valor
+    print('O pagamento deve ser:', valor20)
 elif 300 <= valor < 1000:
-    valor50 = valor*0.5+valor
-    print('O pagamento deve ser:',valor50)
+    valor50 = valor * 0.5 + valor
+    print('O pagamento deve ser:', valor50)
 elif valor <= 0:
     print('valor inválido, insira outro!')
 else:
