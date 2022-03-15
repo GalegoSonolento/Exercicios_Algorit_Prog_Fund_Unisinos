@@ -3,9 +3,26 @@
 
 iniciar = input('Digite algo para iniciar: ')
 i = 0
-n = 0
+num = 2
 soma = 0
 
+while i < 200:
+    isPrimo = True
+    cont = 2
+    while cont < num:
+        if num % cont == 0:
+            isPrimo = False
+        cont += 1
+    if isPrimo:
+        print(num)
+        soma += num
+        i += 1
+        num += 1
+    else:
+        i += 1
+        num += 1
+
+print('A soma de todos os primos até 200 é {}'.format(soma))
 # while i < 200:
 #     primo = True
 #     for p in range(2, 200):
@@ -18,66 +35,3 @@ soma = 0
 #         i += 1
 #         print(i)
 # print(soma)
-
-while i < 200:
-    if n == 0:
-        i += 1
-        n += 1
-    elif n == 1:
-        i += 1
-        n += 1
-    elif n == 2:
-        print(n)
-        soma += n
-        i += 1
-        n += 1
-    elif n % 2 == 0:
-        i += 1
-        n += 1
-    elif n == 3:
-        print(n)
-        soma += n
-        i += 1
-        n += 1
-    elif n % 3 == 0:
-        i += 1
-        n += 1
-    elif n == 5:
-        print(n)
-        soma += n
-        i += 1
-        n += 1
-    elif n % 5 == 0:
-        i += 1
-        n += 1
-    elif n == 7:
-        print(n)
-        soma += n
-        i += 1
-        n += 1
-    elif n % 7 == 0:
-        i += 1
-        n += 1
-    elif n == 11:
-        print(n)
-        soma += n
-        i += 1
-        n += 1
-    elif n % 11 == 0:
-        i += 1
-        n += 1
-    elif n == 13:
-        print(n)
-        soma += n
-        i += 1
-        n += 1
-    elif n % 13 == 0:
-        i += 1
-        n += 1
-    else:
-        print(n)
-        soma += n
-        i += 1
-        n += 1
-
-print(soma)
