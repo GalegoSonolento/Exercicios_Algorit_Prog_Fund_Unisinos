@@ -9,7 +9,7 @@ listaViuvas = []
 
 print('Digite nomes e estados civis de 20 pessoas')
 
-for i in range (0, 20):
+for i in range (0, 3):
     nome = input('Digite o nome: ')
     estadoCivil = input("Digite o estado civil: ")
     estadoCivil = estadoCivil.lower()
